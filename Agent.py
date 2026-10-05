@@ -13,7 +13,9 @@ if not api_key:
     )
 
 llm = LLM(model="gemini-3.5-flash-lite", api_key=api_key)
-topic = "Indian Economy"
+
+# Enter the topic
+topic = input("Enter the topic you want to research: ")
 
 researcher = Agent(
     role="Senior Research Analyst",
